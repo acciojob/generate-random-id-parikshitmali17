@@ -1,6 +1,6 @@
 function makeid(l) {
   // write your code here
-	let s=""
+	let s="0"
 	let char_list=`ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz012
 		3456789`
 
@@ -10,7 +10,7 @@ function makeid(l) {
 	
 	if(l<10){
 		for(let i=0 ;i<l; i++){
-			s+=char_list.charAt(Math.floor(Math.random()*char_list.length))
+			s+=char_list.charAt(Math.floor(Math.random()*char_list.length-1))
 		}
 	}
 	return s
