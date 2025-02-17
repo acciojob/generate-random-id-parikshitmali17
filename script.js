@@ -6,7 +6,7 @@ function makeid(l) {
 	
 	if(l<10){
 		for(let i=0 ;i<=l; i++){
-			s=charAt(Math.floor(Math.random()*char_list.length))+s
+			s=char_list.charAt(Math.floor(Math.random()*char_list.length))+s
 		}
 	}
 	return s
